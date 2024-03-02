@@ -10,46 +10,46 @@ vk = vk_session.get_api()
 #     access_token=TOKEN
 #     ))
 
-# keyboard = """{
-# "one_time":false,
-# "buttons":[
-# [
-# {
-# "action":{
-# "type":"text",
-# "label":"Спасибо, Аля @choko_laka 💘"
-# },
-# "color":"negative"
-# }
-# ],
-# [
-# {
-# "action":{
-# "type":"text",
-# "label":"Спасибо, Глеб @id166147232 💕"
-# },
-# "color":"positive"
-# }
-# ],
-# [
-# {
-# "action":{
-# "type":"text",
-# "label":"Спасибо, Ильяс @ilyasatmo 💖"
-# },
-# "color":"primary"
-# }
-# ],
-# [
-# {
-# "action":{
-# "type":"text",
-# "label":"Спасибо, ЭК 💜"
-# },
-# "color":"secondary"
-# }
-# ]
-# ]}"""
+keyboard = """{
+ "one_time":false,
+ "buttons":[
+ [
+ {
+ "action":{
+ "type":"text",
+ "label":"Да здравствует Марина @id320375113"
+ },
+ "color":"negative"
+ }
+ ],
+ [
+ {
+ "action":{
+ "type":"text",
+ "label":"Да здравствует Вероника @vvvv_002"
+ },
+ "color":"positive"
+ }
+ ],
+ [
+ {
+ "action":{
+ "type":"text",
+ "label":"Спасибо, Дима @theawwesome 💖"
+ },
+ "color":"primary"
+ }
+ ],
+ [
+ {
+ "action":{
+ "type":"text",
+ "label":"Спасибо,Саша @khomoch_kaa  💜"
+ },
+ "color":"secondary"
+ }
+ ]
+ ]}"""
 
 # keyboard = """{
 # "one_time":false,
@@ -94,11 +94,14 @@ vk = vk_session.get_api()
 
 keyboard = """{"buttons":[],"one_time":true}"""
 
-print(vk.messages.send(
-    random_id=43652232,
-    access_token=TOKEN,
-    peer_id=2000000001,
-    message=("""До новых встреч! Да здравствует Марк @vuchuy """),
-    dont_parse_links=1,
+# keyboard = """{ "one_time":false, "buttons":[ [ { "action":{ 
+# "type":"text", "label":"С новым годом, Атмосфера"
+# },
+# "color":"negative"
+# }]]}"""
+
+print(vk.messages.send( random_id=4365232382, access_token=TOKEN, 
+    peer_id=2000000001, message=(""" Да здравствует Атмосфера! Да 
+    здравствует ещё один продуктивный год!!  """), dont_parse_links=1, 
     keyboard=keyboard,
-))
+ ))
